@@ -15,4 +15,24 @@ package org.ua;
 *
 * */
 public class Calculadora {
+    public double resultado;
+    public double getResultado() {
+        return resultado;
+    }
+
+    public void somar (double var1, double var2){
+        resultado = var1 + var2;
+    }
+
+    public void subtrair (double var1, double var2){
+        resultado = var1 - var2;
+    }
+
+    public void dividir (double var1, double var2){
+        resultado = var1 / var2;
+    }
+
+    public void multiplicar (double var1, double var2){
+        resultado = var1 * var2;
+    }
 }
