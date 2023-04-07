@@ -15,4 +15,5 @@ package org.ua;
 *
 * */
 public class Calculadora {
+    private soma;
 }
