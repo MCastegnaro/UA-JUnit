@@ -15,4 +15,43 @@ package org.ua;
 *
 * */
 public class Calculadora {
+    private double soma;
+
+    private double subtracao;
+
+    private double divisao;
+
+    private double multiplicacao;
+
+    public double somar(double valor1, double valor2){
+
+        this.soma = valor1 + valor2;
+        return  this.soma;
+    }
+
+    public double multiplicar(double valor1, double valor2){
+
+        this.multiplicacao = valor1 * valor2;
+        return multiplicacao;
+    }
+
+
+    public double  dividir(double valor1, double valor2){
+        if (valor2 == 0) {
+            throw new RuntimeException("Não é possível dividir por 0");
+        }else{
+            this.divisao = valor1 / valor2;
+            return this.divisao;
+        }
+    }
+
+
+    public double subtrair(double valor1, double valor2){
+
+        this.subtracao = valor1 - valor2;
+        return this.subtracao;
+    }
+
+
 }
+
