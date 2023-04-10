@@ -1,18 +1,27 @@
 package org.ua;
 
-/*
-*
-* Criar uma classe chamada calculadora, com os seguintes métodos:
-* - Somar
-* - Subtrair
-* - Dividir
-* - Multiplicar
-*
-* Em seguida criar uma classe de teste chamada CalculadoraTest para cobrir
-* as funcionalidades da classe.
-*
-* Entrega: Criar uma branch seguindo o padrão "ua-seunome-seusobrenome". Criar um pull request para branch "entrega-01"
-*
-* */
 public class Calculadora {
+
+    public double somar (double value1, double value2) {
+        return value1 + value2;
+    }
+
+    public double subtrair (double value1, double value2) {
+        return value1 - value2;
+    }
+
+    public double dividir (double value1, double value2) {
+        if(value2 == 0) {
+            throw new RuntimeException("Chave nao pode ser zero");
+        } else {
+            return value1 / value2;
+        }
+
+    }
+
+    public double multiplicar (double value1, double value2) {
+        return value1 * value2;
+    }
+
+
 }
