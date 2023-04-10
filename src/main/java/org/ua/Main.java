@@ -3,6 +3,7 @@ package org.ua;
 public class Main {
     public static void main(String[] args) {
         Conta conta = new Conta();
+        Calculadora calculadora = new Calculadora();
 
         conta.ativar();
         conta.depositar(100.0);
