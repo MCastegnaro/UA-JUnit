@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="175b0b12-02eb-4ffe-9a48-ccf386aa5f9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/ua/Conta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ContaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TesteInicial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ua/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ua/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ua/Calculadora.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,12 +22,22 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="workspaceImportEnabled" value="true" />
@@ -49,33 +57,38 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Lucas Mendes/Desktop/Nova pasta/UA-JUnit",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ContaTest">
-    <configuration name="ContaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CalculadoraTest">
+    <configuration name="CalculadoraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UA-testes-unitarios" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContaTest" />
+      <option name="MAIN_CLASS_NAME" value="CalculadoraTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaTest.deveDepositarComContaAtiva" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ContaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UA-testes-unitarios" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ContaTest" />
-      <option name="METHOD_NAME" value="deveDepositarComContaAtiva" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -112,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculadoraTest" />
         <item itemvalue="JUnit.ContaTest" />
         <item itemvalue="JUnit.ContaTest.naoDeveSacarContaAtivaEsaldoMenorQuevalorDeSaque" />
         <item itemvalue="JUnit.ContaTest.naoDeveSacarContaInativa" />
         <item itemvalue="JUnit.ContaTest.naoDeveDepositarComContaInativa" />
-        <item itemvalue="JUnit.ContaTest.deveDepositarComContaAtiva" />
       </list>
     </recent_temporary>
   </component>
@@ -140,11 +153,27 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="ua-lucas-mendes" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="projeto iniciado" />
+    <option name="LAST_COMMIT_MESSAGE" value="projeto iniciado" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
