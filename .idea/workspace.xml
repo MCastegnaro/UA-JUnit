@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="175b0b12-02eb-4ffe-9a48-ccf386aa5f9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/ua/Conta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ContaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TesteInicial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CalculadoraTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ua/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ua/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ua/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ua/Calculadora.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,17 +23,15 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="entrega-01" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="2Nh2xwLtS7tc1sJY8AvSBwRrFLw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -49,6 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "ua-allyson-menezes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,51 +58,51 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ContaTest">
-    <configuration name="ContaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CalculadoraTest">
+    <configuration name="CalculadoraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UA-testes-unitarios" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContaTest" />
+      <option name="MAIN_CLASS_NAME" value="CalculadoraTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaTest.deveDepositarComContaAtiva" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculadoraTest.somarPorZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UA-testes-unitarios" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContaTest" />
-      <option name="METHOD_NAME" value="deveDepositarComContaAtiva" />
+      <option name="MAIN_CLASS_NAME" value="CalculadoraTest" />
+      <option name="METHOD_NAME" value="somarPorZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaTest.naoDeveDepositarComContaInativa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculadoraTest.valorNegativoSubtraindoComValorPositivo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UA-testes-unitarios" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContaTest" />
-      <option name="METHOD_NAME" value="naoDeveDepositarComContaInativa" />
+      <option name="MAIN_CLASS_NAME" value="CalculadoraTest" />
+      <option name="METHOD_NAME" value="valorNegativoSubtraindoComValorPositivo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaTest.naoDeveSacarContaAtivaEsaldoMenorQuevalorDeSaque" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculadoraTest.valorPositivoMultiplicandoComValorNegativo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UA-testes-unitarios" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContaTest" />
-      <option name="METHOD_NAME" value="naoDeveSacarContaAtivaEsaldoMenorQuevalorDeSaque" />
+      <option name="MAIN_CLASS_NAME" value="CalculadoraTest" />
+      <option name="METHOD_NAME" value="valorPositivoMultiplicandoComValorNegativo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaTest.naoDeveSacarContaInativa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CalculadoraTest.valorPositivoSubtraindoComValorNegativo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UA-testes-unitarios" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContaTest" />
-      <option name="METHOD_NAME" value="naoDeveSacarContaInativa" />
+      <option name="MAIN_CLASS_NAME" value="CalculadoraTest" />
+      <option name="METHOD_NAME" value="valorPositivoSubtraindoComValorNegativo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,11 +110,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ContaTest" />
-        <item itemvalue="JUnit.ContaTest.naoDeveSacarContaAtivaEsaldoMenorQuevalorDeSaque" />
-        <item itemvalue="JUnit.ContaTest.naoDeveSacarContaInativa" />
-        <item itemvalue="JUnit.ContaTest.naoDeveDepositarComContaInativa" />
-        <item itemvalue="JUnit.ContaTest.deveDepositarComContaAtiva" />
+        <item itemvalue="JUnit.CalculadoraTest" />
+        <item itemvalue="JUnit.CalculadoraTest.somarPorZero" />
+        <item itemvalue="JUnit.CalculadoraTest.valorPositivoMultiplicandoComValorNegativo" />
+        <item itemvalue="JUnit.CalculadoraTest.valorNegativoSubtraindoComValorPositivo" />
+        <item itemvalue="JUnit.CalculadoraTest.valorPositivoSubtraindoComValorNegativo" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +138,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="ua-allyson-menezes" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
