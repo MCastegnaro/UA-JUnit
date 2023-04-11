@@ -18,11 +18,11 @@ package org.ua;
 public class Calculadora {
     public double soma;
 
-    private double subtracao;
+    public double subtracao;
 
-    private double divisao;
+    public double divisao;
 
-    private double multiplicacao;
+    public double multiplicacao;
 
     public void somar(double valor1, double valor2){
         if(valor1 < 0 || valor2 < 0){
@@ -32,7 +32,7 @@ public class Calculadora {
         }}
 
     public void multiplicar(double valor1, double valor2){
-        if(valor1 > 0 || valor2 > 0){
+        if(valor1 < 0 || valor2 < 0){
             throw new RuntimeException("Não da pra multiplicar com número negativo");
         }else {
             this.multiplicacao = valor1 * valor2;
@@ -41,7 +41,7 @@ public class Calculadora {
 
 
     public void dividir(double valor1, double valor2){
-        if(valor1 > 0 || valor2 > 0) {
+        if(valor1 < 0 || valor2 < 0) {
             throw new RuntimeException("Não da para dividir números negativos");
         }else{
             this.divisao = valor1 / valor2;
@@ -51,7 +51,7 @@ public class Calculadora {
 
 
     public void subtrair(double valor1, double valor2){
-        if(valor1 > 0 || valor2 > 0){
+        if(valor1 < 0 || valor2 < 0){
             throw new RuntimeException("Não da para subtrair números negativos");
         }else{
             this.subtracao = valor1 - valor2;

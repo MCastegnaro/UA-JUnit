@@ -36,7 +36,7 @@ public class CalculadoraTest {
     public void deveDividirValoresPositivos() {
         calculadora.dividir(valorValido, valorValido);
 
-        Assertions.assertEquals(calculadora.soma, valorValido + valorValido);
+        Assertions.assertEquals(calculadora.divisao,valorValido / valorValido);
     }
 
     @Test
@@ -44,7 +44,7 @@ public class CalculadoraTest {
     public void deveMultiplicarValoresPositivos() {
         calculadora.multiplicar(valorValido, valorValido);
 
-        Assertions.assertEquals(calculadora.soma, valorValido + valorValido);
+        Assertions.assertEquals(calculadora.multiplicacao,valorValido * valorValido);
     }
 
     @Test
@@ -52,6 +52,6 @@ public class CalculadoraTest {
     public void deveSubtrairValoresPositivos() {
         calculadora.subtrair(valorValido, valorValido);
 
-        Assertions.assertEquals(calculadora.soma, valorValido + valorValido);
+        Assertions.assertEquals(calculadora.divisao, valorValido - valorValido);
     }
 }
