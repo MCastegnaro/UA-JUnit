@@ -38,13 +38,6 @@ public class CalculadoraTest {
     }
 
     @Test
-    @DisplayName("Dividir os valores")
-    public void dividirValores() {
-
-        Assertions.assertEquals(1, calculadora.dividir(valorA, valorB));
-    }
-
-    @Test
     @DisplayName("Multiplicar os valores")
     public void multiplicarValores() {
 
@@ -52,17 +45,24 @@ public class CalculadoraTest {
     }
 
     @Test
+    @DisplayName("Dividir os valores")
+    public void dividirValores() {
+
+        Assertions.assertEquals(1, calculadora.dividir(valorA, valorB));
+    }
+
+    @Test
+    @DisplayName("Primeiro valor positivo somando com valor negativo")
+    public void valorPositivoSomandoComValorNegativo() {
+
+        Assertions.assertEquals(0, calculadora.somar(valorA, -valorB));
+    }
+
+    @Test
     @DisplayName("Primeiro valor negativo somando com número positivo")
     public void valorNegativoSomandoComValorPositivo() {
 
         Assertions.assertEquals(0, calculadora.somar(-valorA, valorB));
-    }
-
-    @Test
-    @DisplayName("Primeiro valor negativo somando com valor positivo")
-    public void valorPositivoSomandoComValorNegativo() {
-
-        Assertions.assertEquals(0, calculadora.somar(valorA, -valorB));
     }
 
     @Test
@@ -101,7 +101,7 @@ public class CalculadoraTest {
     }
 
     @Test
-    @DisplayName("Primeiro valor positivo dividindo com número negativo")
+    @DisplayName("Primeiro valor negativo dividindo com número positivo")
     public void valorNegativoDividindoComValorPositivo() {
 
         Assertions.assertEquals(-1, calculadora.dividir(-valorA, valorB));
