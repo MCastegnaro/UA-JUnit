@@ -1,3 +1,5 @@
+package src.test.java;
+
 import org.junit.jupiter.api.*;
 import org.ua.Conta;
 

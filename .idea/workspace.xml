@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="175b0b12-02eb-4ffe-9a48-ccf386aa5f9f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ua/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ua/Calculadora.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/ua/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ua/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ContaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ContaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,34 +42,34 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Jonathan/Desktop/Memata/UA-JUnit",
+    "last_opened_file_path": "C:/Users/Jonathan/Desktop/matheus",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ContaTest">
+  <component name="RunManager" selected="JUnit.CalculadoraTest.deveSomarValoresPositivos">
+    <configuration name="CalculadoraTest.deveSomarValoresPositivos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UA-JUnit" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CalculadoraTest" />
+      <option name="METHOD_NAME" value="deveSomarValoresPositivos" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ContaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="UA-testes-unitarios" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ContaTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContaTest.deveDepositarComContaAtiva" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UA-testes-unitarios" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContaTest" />
-      <option name="METHOD_NAME" value="deveDepositarComContaAtiva" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,11 +106,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculadoraTest.deveSomarValoresPositivos" />
         <item itemvalue="JUnit.ContaTest" />
         <item itemvalue="JUnit.ContaTest.naoDeveSacarContaAtivaEsaldoMenorQuevalorDeSaque" />
         <item itemvalue="JUnit.ContaTest.naoDeveSacarContaInativa" />
         <item itemvalue="JUnit.ContaTest.naoDeveDepositarComContaInativa" />
-        <item itemvalue="JUnit.ContaTest.deveDepositarComContaAtiva" />
       </list>
     </recent_temporary>
   </component>
