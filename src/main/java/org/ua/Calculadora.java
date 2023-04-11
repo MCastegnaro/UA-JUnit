@@ -15,4 +15,32 @@ package org.ua;
 *
 * */
 public class Calculadora {
+
+
+    public double dividir(double num1, double num2){
+        if(num2==0){
+            // operação aritmética é inválida
+            throw new ArithmeticException("Nunhum numero pode ser divisivel por zero");
+        }
+
+        return num1/num2;
+    }
+
+    public  double somar(double num1, double num2){
+        return num1+num2;
+    }
+
+    public  double subtracao(double num1, double num2){
+        return num1-num2;
+    }
+
+    public  double multiplicacao(double num1, double num2){
+                return num1*num2;
+    }
+
+
+
+
+
+
 }

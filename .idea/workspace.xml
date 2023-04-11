@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="175b0b12-02eb-4ffe-9a48-ccf386aa5f9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/ua/Conta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ContaTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TesteInicial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/ua/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ua/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/ua/Calculadora.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ua/Calculadora.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,13 +27,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2Nh2xwLtS7tc1sJY8AvSBwRrFLw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -49,6 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Ana Julia/Desktop/Nova pasta/UA-JUnit",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,51 +52,51 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.ContaTest">
-    <configuration name="ContaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UA-testes-unitarios" />
+  <component name="RunManager" selected="JUnit.CalculadoraTest">
+    <configuration name="CalculadoraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UA-JUnit" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContaTest" />
+      <option name="MAIN_CLASS_NAME" value="CalculadoraTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaTest.deveDepositarComContaAtiva" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UA-testes-unitarios" />
+    <configuration name="CalculadoraTest.calculoDivisaoNumerosNegativos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UA-JUnit" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContaTest" />
-      <option name="METHOD_NAME" value="deveDepositarComContaAtiva" />
+      <option name="MAIN_CLASS_NAME" value="CalculadoraTest" />
+      <option name="METHOD_NAME" value="calculoDivisaoNumerosNegativos" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaTest.naoDeveDepositarComContaInativa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UA-testes-unitarios" />
+    <configuration name="CalculadoraTest.calculoMultiplicacaoNumerosNegativos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UA-JUnit" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContaTest" />
-      <option name="METHOD_NAME" value="naoDeveDepositarComContaInativa" />
+      <option name="MAIN_CLASS_NAME" value="CalculadoraTest" />
+      <option name="METHOD_NAME" value="calculoMultiplicacaoNumerosNegativos" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaTest.naoDeveSacarContaAtivaEsaldoMenorQuevalorDeSaque" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UA-testes-unitarios" />
+    <configuration name="CalculadoraTest.calculoSomaComNumerosNegativos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UA-JUnit" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContaTest" />
-      <option name="METHOD_NAME" value="naoDeveSacarContaAtivaEsaldoMenorQuevalorDeSaque" />
+      <option name="MAIN_CLASS_NAME" value="CalculadoraTest" />
+      <option name="METHOD_NAME" value="calculoSomaComNumerosNegativos" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContaTest.naoDeveSacarContaInativa" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="UA-testes-unitarios" />
+    <configuration name="CalculadoraTest.calculoSubtracaoNumerosNegativos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="UA-JUnit" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ContaTest" />
-      <option name="METHOD_NAME" value="naoDeveSacarContaInativa" />
+      <option name="MAIN_CLASS_NAME" value="CalculadoraTest" />
+      <option name="METHOD_NAME" value="calculoSubtracaoNumerosNegativos" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -112,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ContaTest" />
-        <item itemvalue="JUnit.ContaTest.naoDeveSacarContaAtivaEsaldoMenorQuevalorDeSaque" />
-        <item itemvalue="JUnit.ContaTest.naoDeveSacarContaInativa" />
-        <item itemvalue="JUnit.ContaTest.naoDeveDepositarComContaInativa" />
-        <item itemvalue="JUnit.ContaTest.deveDepositarComContaAtiva" />
+        <item itemvalue="JUnit.CalculadoraTest" />
+        <item itemvalue="JUnit.CalculadoraTest.calculoSubtracaoNumerosNegativos" />
+        <item itemvalue="JUnit.CalculadoraTest.calculoDivisaoNumerosNegativos" />
+        <item itemvalue="JUnit.CalculadoraTest.calculoMultiplicacaoNumerosNegativos" />
+        <item itemvalue="JUnit.CalculadoraTest.calculoSomaComNumerosNegativos" />
       </list>
     </recent_temporary>
   </component>
