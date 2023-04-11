@@ -8,11 +8,11 @@ public class Main {
         conta.depositar(100.0);
         System.out.println("Valor atual da conta: " + conta.getSaldo());
 
-        conta.sacar(70);
-
-        conta.inativar();
-        conta.depositar(50.0);
-        System.out.println("Valor atual da conta: " + conta.getSaldo());
+//        conta.sacar(70);
+//
+//        conta.inativar();
+//        conta.depositar(50.0);
+//        System.out.println("Valor atual da conta: " + conta.getSaldo());
 
     }
 }
