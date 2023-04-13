@@ -13,6 +13,5 @@ public class Main {
         conta.inativar();
         conta.depositar(50.0);
         System.out.println("Valor atual da conta: " + conta.getSaldo());
-
     }
 }
