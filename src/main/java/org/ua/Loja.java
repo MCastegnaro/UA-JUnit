@@ -1,10 +1,15 @@
 package org.ua;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 public class Loja {
     private List<Cliente> clientes;
+
+    public Loja(){
+        this.clientes = new ArrayList<>();
+    }
 
     public void adicionarClientes(Cliente cliente){
         clientes.add(cliente);
