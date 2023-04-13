@@ -33,4 +33,81 @@ package org.ua;
  */
 
 public class Pessoa {
+    private String nome;
+    private double idade;
+    private String endereco;
+    private String genero;
+    private String telefone;
+    private double tempoDeTrabalho;
+    private double tempoParaSeAposentar;
+
+    public Pessoa(String nome, double idade, String endereco, String genero, String telefone, double tempoDeTrabalho) {
+        this.nome = nome;
+        this.idade = idade;
+        this.endereco = endereco;
+        this.genero = genero;
+        this.telefone = telefone;
+        this.tempoDeTrabalho = tempoDeTrabalho;
+    }
+
+    public Pessoa(String nome, String telefone) {
+        this.nome = nome;
+        this.telefone = telefone;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getIdade() {
+        return idade;
+    }
+
+    public void setIdade(double idade) {
+        this.idade = idade;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public double getTempoDeTrabalho() {
+        return tempoDeTrabalho;
+    }
+
+    public void setTempoDeTrabalho(double tempoDeTrabalho) {
+        this.tempoDeTrabalho = tempoDeTrabalho;
+    }
+
+    public double getTempoParaSeAposentar() {
+        return tempoParaSeAposentar;
+    }
+
+    public void setTempoParaSeAposentar(double tempoParaSeAposentar) {
+        this.tempoParaSeAposentar = tempoParaSeAposentar;
+    }
 }
