@@ -64,7 +64,3 @@ package org.ua;
         }
     }
 }
-
-
-public class Pessoa {
-}
