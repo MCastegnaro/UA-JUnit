@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="175b0b12-02eb-4ffe-9a48-ccf386aa5f9f" name="Changes" comment="metodos getters e setters criados para todos os atributos, cosntrutores e testes para as funcionalidades de nome e idade">
+    <list default="true" id="175b0b12-02eb-4ffe-9a48-ccf386aa5f9f" name="Changes" comment="testes dos metodos getNome, getIdade, getEndereço, getDadosCompletos, getNomeETelefone, getTempoDeTrabalho, getTelefone finalizados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/ua/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/ua/Pessoa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/PessoaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PessoaTest.java" afterDir="false" />
@@ -143,7 +143,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680102246682</updated>
       <workItem from="1680627416157" duration="16243000" />
-      <workItem from="1681391894836" duration="18171000" />
+      <workItem from="1681391894836" duration="21037000" />
     </task>
     <task id="LOCAL-00001" summary="inicio entrega 02">
       <created>1681346791078</created>
@@ -159,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681404121200</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="testes dos metodos getNome, getIdade, getEndereço, getDadosCompletos, getNomeETelefone, getTempoDeTrabalho, getTelefone finalizados">
+      <created>1681410314862</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1681410314862</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +199,8 @@
     <MESSAGE value="projeto iniciado" />
     <MESSAGE value="inicio entrega 02" />
     <MESSAGE value="metodos getters e setters criados para todos os atributos, cosntrutores e testes para as funcionalidades de nome e idade" />
-    <option name="LAST_COMMIT_MESSAGE" value="metodos getters e setters criados para todos os atributos, cosntrutores e testes para as funcionalidades de nome e idade" />
+    <MESSAGE value="testes dos metodos getNome, getIdade, getEndereço, getDadosCompletos, getNomeETelefone, getTempoDeTrabalho, getTelefone finalizados" />
+    <option name="LAST_COMMIT_MESSAGE" value="testes dos metodos getNome, getIdade, getEndereço, getDadosCompletos, getNomeETelefone, getTempoDeTrabalho, getTelefone finalizados" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

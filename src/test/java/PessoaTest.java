@@ -169,4 +169,41 @@ public class PessoaTest {
         Assertions.assertThrows(RuntimeException.class, () -> pessoa.setTempoDeTrabalho(101));
     }
 
+    @Test
+    @DisplayName("Variavel tempoDeTrabalho DEVE receber um inteiro conforme o valor atribuido")
+    public void verificaVarivelTempoDeTrabalhoComOvalorInteiroAtribuido() {
+        Assertions.assertEquals(42, pessoa.getTempoDeTrabalho());
+    }
+
+    @Test
+    @DisplayName("DEVE retornar o valor restante para se aposentar do genero masculino, pois a idade é menor que o limite")
+    public void verificaTempoRestanteParaAposentarMasculino(){
+
+        pessoa.setTempoParaSeAposentar(pessoa.getGenero(), 42);
+
+        Assertions.assertEquals(23, pessoa.getTempoParaSeAposentar());
+    }
+
+    @Test
+    @DisplayName("NÃO deve retornar o valor restante para se aposentar do genero masculino, pois já está aposentado")
+    public void verificaTempoRestanteParaAposentarMasculinoComValorMaiorOuIgualAoLimite(){
+
+        Assertions.assertThrows(RuntimeException.class, ()-> pessoa.setTempoParaSeAposentar(pessoa.getGenero(), 70));
+    }
+
+    @Test
+    @DisplayName("DEVE retornar o valor restante para se aposentar do genero feminino, pois a idade é menor que o limite")
+    public void verificaTempoRestanteParaAposentarFeminino(){
+        pessoa.setTempoParaSeAposentar("feminino", 40);
+
+        Assertions.assertEquals(20, pessoa.getTempoParaSeAposentar());
+    }
+
+    @Test
+    @DisplayName("NÃO deve retornar o valor restante para se aposentar do genero feminino, pois já está aposentada")
+    public void verificaTempoRestanteParaAposentarFemininoComValorMaiorOuIgualAoLimite(){
+
+        Assertions.assertThrows(RuntimeException.class, ()-> pessoa.setTempoParaSeAposentar("feminino", 70));
+    }
+
 }

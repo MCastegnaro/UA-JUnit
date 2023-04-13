@@ -176,7 +176,19 @@ public class Pessoa {
         return tempoParaSeAposentar;
     }
 
-    public void setTempoParaSeAposentar(Integer tempoParaSeAposentar) {
-        this.tempoParaSeAposentar = tempoParaSeAposentar;
+    public void setTempoParaSeAposentar(String genero, Integer idade) {
+        if (genero == "masculino") {
+            if(idade >= 65){
+                throw new RuntimeException("Idade maior ou igual a 65 anos, já está aposentado!");
+            } else if(idade < 65){
+                this.tempoParaSeAposentar = 65 - idade;
+            }
+        } else if(genero == "feminino"){
+            if(idade >= 60){
+                throw new RuntimeException("Idade maior ou igual a 60 anos, já está aposentada!");
+            } else if(idade < 60){
+                this.tempoParaSeAposentar = 60 - idade;
+            }
+        }
     }
 }
