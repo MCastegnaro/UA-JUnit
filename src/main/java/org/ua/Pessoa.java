@@ -34,14 +34,14 @@ package org.ua;
 
 public class Pessoa {
     private String nome;
-    private double idade;
+    private Integer idade;
     private String endereco;
     private String genero;
     private String telefone;
     private double tempoDeTrabalho;
     private double tempoParaSeAposentar;
 
-    public Pessoa(String nome, double idade, String endereco, String genero, String telefone, double tempoDeTrabalho) {
+    public Pessoa(String nome, Integer idade, String endereco, String genero, String telefone, double tempoDeTrabalho) {
         this.nome = nome;
         this.idade = idade;
         this.endereco = endereco;
@@ -55,20 +55,45 @@ public class Pessoa {
         this.telefone = telefone;
     }
 
+    public Pessoa() {
+    }
+
     public String getNome() {
         return nome;
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        if (nome == null) {
+            throw new RuntimeException("O nome inserido é nulo!");
+        }
+        else if (nome.isEmpty()) {
+            throw new RuntimeException("O nome inserido é vazio");
+        }
+        else if (nome.trim().length() < 3) {
+            throw new RuntimeException("O nome inserido possui menos que 3 letras");
+        }
+        else {
+            this.nome = nome;
+        }
     }
 
     public double getIdade() {
         return idade;
     }
 
-    public void setIdade(double idade) {
-        this.idade = idade;
+    public void setIdade(Integer idade) {
+        if (idade == null) {
+            throw new RuntimeException("A idade inserida é nula!");
+        }
+        else if (idade == 0){
+            throw new RuntimeException("A idade inserida possui o valor 0!");
+        }
+        else if (idade > 130){
+            throw new RuntimeException("A idade inserida não compactua com o tempo de vida de um ser humano!");
+        }
+        else {
+            this.idade = idade;
+        }
     }
 
     public String getEndereco() {
