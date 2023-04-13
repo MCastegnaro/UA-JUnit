@@ -38,10 +38,10 @@ public class Pessoa {
     private String endereco;
     private String genero;
     private String telefone;
-    private double tempoDeTrabalho;
-    private double tempoParaSeAposentar;
+    private Integer tempoDeTrabalho;
+    private Integer tempoParaSeAposentar;
 
-    public Pessoa(String nome, Integer idade, String endereco, String genero, String telefone, double tempoDeTrabalho) {
+    public Pessoa(String nome, Integer idade, String endereco, String genero, String telefone, Integer tempoDeTrabalho) {
         this.nome = nome;
         this.idade = idade;
         this.endereco = endereco;
@@ -89,7 +89,7 @@ public class Pessoa {
             throw new RuntimeException("A idade inserida possui o valor 0!");
         }
         else if (idade > 130){
-            throw new RuntimeException("A idade inserida não compactua com o tempo de vida de um ser humano!");
+            throw new RuntimeException("A idade inserida excede o limite máximo do campo idade (130)!");
         }
         else {
             this.idade = idade;
@@ -101,7 +101,18 @@ public class Pessoa {
     }
 
     public void setEndereco(String endereco) {
-        this.endereco = endereco;
+        if (endereco == null) {
+            throw new RuntimeException("O endereço inserido é nulo!");
+        }
+        else if (endereco.isEmpty()) {
+            throw new RuntimeException("O endereço inserido é vazio");
+        }
+        else if (endereco.trim().length() < 5) {
+            throw new RuntimeException("O endereço inserido possui menos que 5 letras");
+        }
+        else {
+            this.endereco = endereco;
+        }
     }
 
     public String getGenero() {
@@ -109,7 +120,18 @@ public class Pessoa {
     }
 
     public void setGenero(String genero) {
-        this.genero = genero;
+        if (genero == null) {
+            throw new RuntimeException("O gênero inserido é nulo!");
+        }
+        else if (genero.isEmpty()) {
+            throw new RuntimeException("O gênero inserido é vazio");
+        }
+        else if(genero == "masculino" || genero == "feminino") {
+            this.genero = genero;
+        }
+        else {
+            throw new RuntimeException("O gênero inserido não é valido");
+        }
     }
 
     public String getTelefone() {
@@ -117,22 +139,44 @@ public class Pessoa {
     }
 
     public void setTelefone(String telefone) {
-        this.telefone = telefone;
+        if (telefone == null) {
+            throw new RuntimeException("O telefone inserido é nulo!");
+        }
+        else if (telefone.isEmpty()) {
+            throw new RuntimeException("O telefone inserido é vazio");
+        }
+        else if (telefone.trim().length() < 11) {
+            throw new RuntimeException("O telefone inserido possui menos que 11 números");
+        }
+        else {
+            this.telefone = telefone;
+        }
     }
 
     public double getTempoDeTrabalho() {
         return tempoDeTrabalho;
     }
 
-    public void setTempoDeTrabalho(double tempoDeTrabalho) {
-        this.tempoDeTrabalho = tempoDeTrabalho;
+    public void setTempoDeTrabalho(Integer tempoDeTrabalho) {
+        if (tempoDeTrabalho == null) {
+            throw new RuntimeException("O tempo de trabalho inserido é nulo!");
+        }
+        else if (tempoDeTrabalho < 0){
+            throw new RuntimeException("O tempo de trabalho inserido possui o valor menor que 0!");
+        }
+        else if (tempoDeTrabalho > 100){
+            throw new RuntimeException("O tempo de trabalho excede o limite máximo do campo (100)!");
+        }
+        else {
+            this.tempoDeTrabalho = tempoDeTrabalho;
+        }
     }
 
     public double getTempoParaSeAposentar() {
         return tempoParaSeAposentar;
     }
 
-    public void setTempoParaSeAposentar(double tempoParaSeAposentar) {
+    public void setTempoParaSeAposentar(Integer tempoParaSeAposentar) {
         this.tempoParaSeAposentar = tempoParaSeAposentar;
     }
 }
