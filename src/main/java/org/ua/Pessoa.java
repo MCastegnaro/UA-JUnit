@@ -33,4 +33,111 @@ package org.ua;
  */
 
 public class Pessoa {
+    private String nome;
+    private int idade;
+    private String endereco;
+    private String genero;
+    private String telefone;
+    private int tempoDeTrabalho;
+
+    public String getNome() {
+        return nome;
+    }
+
+    public Pessoa(String nome, int idade, String endereco, String genero, String telefone, int tempoDeTrabalho) {
+        this.nome = nome;
+        this.idade = idade;
+        this.endereco = endereco;
+        this.genero = genero;
+        this.telefone = telefone;
+        this.tempoDeTrabalho = tempoDeTrabalho;
+    }
+
+    public Pessoa() {
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setNome(String nome) {
+
+        if(nome == null){
+            throw new RuntimeException("Nome não pode ser nulo");
+        }
+        else {
+            this.nome = nome;
+        }
+    }
+
+    public void setIdade(int idade) {
+            this.idade = idade;
+
+    }
+
+    public void setEndereco(String endereco) {
+        if (endereco == null){
+            throw new RuntimeException("Endereço não pode ser nulo");
+        }
+        else {
+            this.endereco = endereco;
+        }
+    }
+
+    public void setGenero(String genero) {
+        if (genero == null){
+            throw new RuntimeException("não pode ser nulo");
+        }
+        else {
+            this.genero = genero;
+        }
+    }
+
+    public void setTelefone(String telefone) {
+        if (telefone == null){
+            throw new RuntimeException("Telefone não pode ser nulo");
+        }
+        else {
+            this.telefone = telefone;
+        }
+    }
+
+    public void setTempoDeTrabalho(int tempoDeTrabalho) {
+        this.tempoDeTrabalho = tempoDeTrabalho;
+    }
+
+    public String getEndereco() {
+        return endereco;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public int getTempoDeTrabalho() {
+        return tempoDeTrabalho;
+    }
+
+    public String getDadosCompletos(){
+        return nome + idade + endereco + genero +
+                telefone + tempoDeTrabalho;
+    }
+
+    public String getNomeETelefone(){
+        return nome + telefone;
+    }
+
+    public int getTempoParaSeAposentar(){
+        if (getGenero().equals("Masculino") && getIdade()< 65){
+            return 65 - getIdade();
+        }
+        else if (getGenero().equals("Feminino") && getIdade()< 60){
+            return 60- getIdade();
+        }
+        else return 0;
+    }
 }
