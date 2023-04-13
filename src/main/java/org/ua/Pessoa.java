@@ -1,36 +1,58 @@
 package org.ua;
 
-/**
- * Criar uma classe PESSOA e adicionar os seguintes atributos para ela
- * - Nome
- * - Idade
- * - Endereço
- * - Gênero
- * - Telefone
- * - Tempo de trabalho
- *
- * Essa classe deve ter um contrutor publico para instanciar todos os atributos listados acima
- *
- * Os métodos são:
- * -> getNome> Retorna o nome
- * -> getIdade> Retorna a idade
- * -> getEndereço> Retorna o endereço
- * -> getDadosCompletos> Retorna concatenado NOME, IDADE, GENERO, TELEFONE e TEMPO DE TRABALHO
- * -> getNomeETelefone> Retorna nome e telefone.
- * -> getTempoDeTrabalho> Retorna o tempo de trabalho.
- * -> getTempoParaSeAposentar> Assuma que a idade de aposentadoria é 60 anos feminino, 65 masculino.
- * -> getTelefone> Retorna o telefone.
- *
- * Em seguida crie uma classe de teste para PESSOA e cubra as funcionalidades
- * com testes unitários para validar o correto funcionamento da mesma.
- *
- *
- * ENTREGA
- *
- * A partir da branch aula-02 (upstram), deve ser criada uma branch com o seguinte padrão: ua-nome-sobrenome
- * e nela realizar o desenvolvimento da atividade. Após concluída, a ativade, gerar um PR (pull request) apontando para a branch
- * entrega-02 lá do repositório do professor.
- */
+import java.time.LocalTime;
 
 public class Pessoa {
+    private String nome;
+    private int idade;
+    private String endereco;
+    private String genero;
+    private int telefone;
+    private LocalTime tempoDetrabalho;
+
+    public Pessoa(String nome, int idade, String endereco, String genero, int telefone, LocalTime tempoDetrabalho){
+        this.nome = nome;
+        this.idade = idade;
+        this.endereco = endereco;
+        this.genero = genero;
+        this.telefone = telefone;
+        this.tempoDetrabalho = tempoDetrabalho;
+    }
+
+        public String getNome(){
+        return this.nome;
+        }
+
+    public int getIdade(){
+        if (idade >= 0){
+            return this.idade;
+        } else {
+            throw new RuntimeException("Idade não pode ser igual a 0");
+        }
+    }
+
+    public String getGenero(){
+        return this.genero;
+    }
+
+    public String getNomeETelefone(){
+        return "Nome:" + this.nome + " " + "Telefone:" +this.telefone;
+     }
+
+    public String getEndereco(){
+        return this.endereco;
+    }
+
+    public LocalTime getTempoDetrabalho(){
+        return this.tempoDetrabalho;
+    }
+
+    public int getTelefone(){
+        return this.telefone;
+    }
+
+    public String getDadosCompletos(){
+        return "Nome: " + this.nome + " " + "Idade: " + this.idade + " " + "Endereço: " + this.endereco + " " + "Genero: " +this.genero + " " +
+                "Telefone: " + this.telefone + " " + "Tempo De Trabalho: " +this.tempoDetrabalho;
+    }
 }
