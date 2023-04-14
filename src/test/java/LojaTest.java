@@ -6,6 +6,7 @@ import org.ua.Cliente;
 import org.ua.Loja;
 
 import java.util.List;
+import java.util.Optional;
 
 public class LojaTest {
 
@@ -31,7 +32,6 @@ public class LojaTest {
         Assertions.assertEquals(3, clientes.size(), "Deve haver 3 clientes na loja.");
         Assertions.assertEquals("Maria", clientes.get(0).getName(), "O primeiro cliente deve ser a maria.");
         Assertions.assertEquals("Igor", clientes.get(1).getName(), "O segundo cliente deve ser o igor.");
-
     }
 
     @Test
@@ -52,5 +52,25 @@ public class LojaTest {
         boolean naoRemovido = loja.removerCliente(new Cliente("Luis"));
         Assertions.assertFalse(naoRemovido, "Não deve remover o cliente 'Luis', pois ele não foi inserido na lista.");
         Assertions.assertEquals(2, loja.getClientes().size(), "A quantidade de clientes deve continuar 2");
+    }
+
+    @Test
+    @DisplayName("Deve buscar cliente pelo nome")
+    public void testBuscarClientePorNome(){
+        Cliente cliente1 = new Cliente("Maria");
+        Cliente cliente2 = new Cliente("Igor");
+        Cliente cliente3 = new Cliente("Gustavo");
+
+        loja.adicionarClientes(cliente1);
+        loja.adicionarClientes(cliente2);
+        loja.adicionarClientes(cliente3);
+
+        Optional<Cliente> clienteEncontrado = loja.buscarClientePorNome("Maria");
+
+        Assertions.assertTrue(clienteEncontrado.isPresent(), "Deve encontrar a cliente Maria na lista.");
+        Assertions.assertEquals("Maria", clienteEncontrado.get().getName(), "O cliente encontrado deve ser a Maria");
+
+        Optional<Cliente> clienteNaoEncontrado = loja.buscarClientePorNome("Anderson");
+        Assertions.assertFalse(clienteNaoEncontrado.isPresent(), "Não deve encrontrar o 'Anderson' na lista");
     }
 }
