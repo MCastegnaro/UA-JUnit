@@ -33,4 +33,170 @@ package org.ua;
  */
 
 public class Pessoa {
+
+    private String nome;
+    private int idade;
+    private String endereco;
+    private Genero genero;
+    private String telefone;
+    private String tempoDeTrabalho;
+
+    public Pessoa(String nome, int idade, String endereco, Genero genero, String telefone, String tempoDeTrabalho){
+        this.nome = nome;
+        this.idade = idade;
+        this.endereco = endereco;
+        this.genero = genero;
+        this.telefone = telefone;
+        this.tempoDeTrabalho = tempoDeTrabalho;
+    }
+
+    public void cadastro(String nome, int idade, String endereco, Genero genero, String telefone, String tempoDeTrabalho){
+        if(idade >= 65 && genero == Genero.MASCULINO){
+            System.out.println("Idade suficiente para aposentar");
+
+        }else{
+            throw new RuntimeException("Para genero masculino sua idade é insufuciente para se aposentar!");
+        }
+
+        if(idade >= 60 && genero == genero.FEMININO){
+            System.out.println("Idade suficiente para mulher se aponsentar ");
+        }else{
+            throw new RuntimeException("Para genero feminino sua idade é insufuciente para se aposentar!");
+        }
+
+        if (nome == null ){// verifica se nome é nullo para cadastro
+            throw new RuntimeException("Cadastro negado, pois o nome está nullo!");
+        }else{
+            System.out.println("Nome valido para cadastro");
+        }
+
+        if (endereco == null){// verifica se endereco é nullo para cadastro
+            throw new RuntimeException("Cadastro negado, pois o endereco está nullo!");
+        }else{
+            System.out.println("Endereco valido para cadastro");
+        }
+
+        if (telefone == null){// verifica se telefone é nullo para cadastro
+            throw new RuntimeException("Cadastro negado, pois o telefone está nullo!");
+        }else{
+            System.out.println("Telefone valido para cadastro");
+        }
+
+        if (tempoDeTrabalho == null){// verifica se tempo de trabalho é nullo para cadastro
+            throw new RuntimeException("Cadastro negado, pois o Tempo de trabalho está nullo!");
+        }else{
+            System.out.println("Tempo de trabalho valido para cadastro");
+        }
+
+        if (nome == null && endereco == null && telefone == null && tempoDeTrabalho == null ){// verifica se os campos em geral estão nullos
+            throw new RuntimeException("Cadastro negado, pois os campos estão nullos!");
+        }else{
+            System.out.println("Cadastro realizado, campos preenchidos com sucesso");
+        }
+
+
+
+    }
+
+
+
+    public String getNome(){
+        return nome;
+    }
+
+    public int getIdade(){
+        return idade;
+    }
+
+    public String getEndereco(){
+        return endereco;
+    }
+
+    public Genero getGenero(){
+        return genero;
+    }
+
+    public String getTelefone(){
+        return telefone;
+    }
+    public String getTempoDeTrabalho(){
+        return tempoDeTrabalho;
+    }
+
+
+    public PessoaDadosCompletos getDadosCompletos(){// metodo get para todos os atributos juntos
+        return new PessoaDadosCompletos(nome, idade, endereco, genero,telefone, tempoDeTrabalho);
+    }
+
+    public PessoaNomeTelefone getNomeTelefone(){ // metodo get para nome e telefone juntos
+        return new PessoaNomeTelefone(nome,telefone);
+    }
+
+
+    public class PessoaDadosCompletos{
+        private String nome;
+        private int idade;
+        private String endereco;
+        private Genero genero;
+        private String telefone;
+        private String tempoDeTrabalho;
+
+        public String getNome(){
+            return nome;
+        }
+
+        public int getIdade(){
+            return idade;
+        }
+
+        public String getEndereco(){
+            return endereco;
+        }
+
+        public Genero getGenero(){
+            return genero;
+        }
+
+        public String getTelefone(){
+            return telefone;
+        }
+
+        public String getTempoDeTrabalho(){
+            return tempoDeTrabalho;
+        }
+
+        public PessoaDadosCompletos(String nome,int idade, String endereco, Genero genero, String telefone, String tempoDeTrabalho){
+            this.nome = nome;
+            this.idade = idade;
+            this.endereco = endereco;
+            this.genero = genero;
+            this.telefone = telefone;
+            this.tempoDeTrabalho = tempoDeTrabalho;
+
+        }
+    }
+
+    public class PessoaNomeTelefone{
+        private String nome;
+        private String telefone;
+
+
+        public String getNome(){
+            return nome;
+        }
+
+        public String getTelefone(){
+            return telefone;
+        }
+
+        public PessoaNomeTelefone(String nome, String telefone){
+            this.nome = nome;
+            this.telefone = telefone;
+        }
+
+
+    }
+
+
+
 }
